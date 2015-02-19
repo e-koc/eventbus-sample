@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="5dp"
+              android:background="#DCDCDC">
+
+
+    <TextView
+        android:id="@+id/tv_fragment_mouse_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm Mouse Fragment"
+        android:textSize="15sp"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_fragment_mouse"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/tv_fragment_mouse_title"/>
+
+    <Button
+        android:id="@+id/btn_fragment_mouse_send_all"
+        android:layout_below="@id/tv_fragment_mouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send everywhere"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_fragment_mouse_send_to_fragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just Fragments"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/btn_fragment_mouse_send_all"
+        android:layout_toRightOf="@+id/btn_fragment_mouse_send_all"
+        android:layout_toEndOf="@+id/btn_fragment_mouse_send_all"/>
+</RelativeLayout>
